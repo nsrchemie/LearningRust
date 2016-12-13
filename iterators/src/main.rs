@@ -20,14 +20,22 @@ fn main() {
 
 //Fold Consumer
 //format for fold is fold(base, accumulator, element)
-let sum = (2..5).fold(0, |sum, x| sum + x);
+// let sum = (2..5).fold(0, |sum, x| sum + x);
 //First Iter: sum = 0, x first element of range (2)
 //sum + x = 2
 //Second Iter: sum = 2, x = 3
 //sum + x = 5
 //Third Iter: sum = 5, x = 4
 //sum + x = 9
-//9 is the final value
-println!("{:?}",sum);
+// //9 is the final value
+// println!("{:?}",sum);
+
+
+// let nums = (1..100).collect::<Vec<i32>>();
+//The first part does not generate the actual numbers 
+//but creates a value that represents the range
+//The consumer tells the range to generate and send it values
+
+
 
 }
