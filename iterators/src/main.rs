@@ -47,9 +47,14 @@ fn main() {
 
 //Iterator Adaptors
 
-let m = (1..100).map(|x| x + 1);
+//Map
+// let m = (1..100).map(|x| x + 1);
+// println!("{:?}",m);
 
-println!("{:?}",m);
+//Take
+for i in (1..).take(5) {
+	println!("{}",i);
+}
 
 
 }
