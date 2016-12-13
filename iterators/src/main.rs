@@ -38,11 +38,18 @@ fn main() {
 
 //The other basic iterator aside from the range is iter()
 //iter() can convert a vector into a simple iterator
-let nums = vec![1,2,3];
+// let nums = vec![1,2,3];
 
-for num in nums.iter() {
-	println!("{}",num);
-}
+// for num in nums.iter() {
+// 	println!("{}",num);
+// }
+
+
+//Iterator Adaptors
+
+let m = (1..100).map(|x| x + 1);
+
+println!("{:?}",m);
 
 
 }
