@@ -8,12 +8,26 @@ fn main() {
 
 
 //Find Consumer
-let over_twenty = (0..80).find(|x| *x > 20);
+// let over_twenty = (0..80).find(|x| *x > 20);
 
-//Without the below if we just printed the variable over_twenty
-//We would receive an output of 'Some(21)', showing the first match
-match over_twenty {
-	Some(_) => println!("Met conditions"),
-	None => println!("Conditions not met"),
-}
+// //Without the below if we just printed the variable over_twenty
+// //We would receive an output of 'Some(21)', showing the first match
+// match over_twenty {
+// 	Some(_) => println!("Met conditions"),
+// 	None => println!("Conditions not met"),
+// }
+
+
+//Fold Consumer
+//format for fold is fold(base, accumulator, element)
+let sum = (2..5).fold(0, |sum, x| sum + x);
+//First Iter: sum = 0, x first element of range (2)
+//sum + x = 2
+//Second Iter: sum = 2, x = 3
+//sum + x = 5
+//Third Iter: sum = 5, x = 4
+//sum + x = 9
+//9 is the final value
+println!("{:?}",sum);
+
 }
