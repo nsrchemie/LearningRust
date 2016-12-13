@@ -36,6 +36,13 @@ fn main() {
 //but creates a value that represents the range
 //The consumer tells the range to generate and send it values
 
+//The other basic iterator aside from the range is iter()
+//iter() can convert a vector into a simple iterator
+let nums = vec![1,2,3];
+
+for num in nums.iter() {
+	println!("{}",num);
+}
 
 
 }
