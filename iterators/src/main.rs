@@ -10,6 +10,8 @@ fn main() {
 //Find Consumer
 let over_twenty = (0..80).find(|x| *x > 20);
 
+//Without the below if we just printed the variable over_twenty
+//We would receive an output of 'Some(21)', showing the first match
 match over_twenty {
 	Some(_) => println!("Met conditions"),
 	None => println!("Conditions not met"),
