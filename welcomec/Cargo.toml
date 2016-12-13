@@ -1,0 +1,9 @@
+[package]
+name = "welcomec"
+version = "0.1.0"
+authors = ["nsrchemie <nsrchemie@gmail.com>"]
+
+[dependencies]
+
+[[bin]]
+name  = "welcome"

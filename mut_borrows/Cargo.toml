@@ -1,0 +1,8 @@
+[package]
+name = "mut_borrows"
+version = "0.1.0"
+authors = ["nsrchemie <nsrchemie@gmail.com>"]
+
+[dependencies]
+
+carboxyl="0.2.1"

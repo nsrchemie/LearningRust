@@ -1,0 +1,6 @@
+[package]
+name = "cond_loops"
+version = "0.1.0"
+authors = ["nsrchemie <nsrchemie@gmail.com>"]
+
+[dependencies]
