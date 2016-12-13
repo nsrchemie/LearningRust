@@ -51,10 +51,16 @@ fn main() {
 // let m = (1..100).map(|x| x + 1);
 // println!("{:?}",m);
 
-//Take
-for i in (1..).take(5) {
-	println!("{}",i);
-}
+// //Take
+// for i in (1..).take(5) {
+// 	println!("{}",i);
+// }
+
+//Filter
+//boolean conditional adapter
+// for i in (1..100).filter(|&x| x % 2 == 0) {
+// 	println!("{}",i);
+// }
 
 
 }
