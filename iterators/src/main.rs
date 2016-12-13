@@ -9,5 +9,9 @@ fn main() {
 
 //Find Consumer
 let over_twenty = (0..80).find(|x| *x > 20);
-println!("{:?}",over_twenty);
+
+match over_twenty {
+	Some(_) => println!("Met conditions"),
+	None => println!("Conditions not met"),
+}
 }
