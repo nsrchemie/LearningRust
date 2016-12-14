@@ -13,11 +13,20 @@ fn main() {
 
 
 
-	//indexing
-	let v = vec![1,2,3];
+	//INDEXING
+	// 	let v = vec![1,2,3];
 
-	//Note that indexing is not with i32 but with type usize
-	let i: usize = 0;
-	// let j: i32 = 0; //THIS WONT WORK
-	println!("The first element of v is {}",v[i]);
-}
+	// 	//Note that indexing is not with i32 but with type usize
+	// 	let i: usize = 0;
+	// 	// let j: i32 = 0; //THIS WONT WORK
+	// 	println!("The first element of v is {}",v[i]);
+
+
+	//WORKING WITH OUT OF BOUNDS INDEXING ERRORS
+	let v = vec![1,2,3];
+	match v.get(7) {
+		Some(x) => println!("Item 7 is {}",x),
+		None => println!("The index doesnt exist"),
+	}
+	}
+
