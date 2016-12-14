@@ -34,24 +34,37 @@ fn main() {
 
 //USE OF MUTABLE POINTERS IN STRUCTS
 
-	struct Point {
+	// struct Point {
+	// 	x: i32,
+	// 	y:i32,
+	// }
+
+	// struct PointRef<'a> {
+	// 	x: &'a mut i32,
+	// 	y: &'a mut i32,
+	// }
+
+	// let mut point = Point {x:0,y:0};
+
+	// {
+	// 	let r = PointRef{x: &mut point.x, y: &mut point.y};
+
+	// 	*r.y = 6;
+	// 	*r.x = 10;
+	// }
+
+	// println!("{} {}",point.x, point.y );
+
+
+	//USE OF .. TO COPY PARTS OF STRUCTS FOR USE IN OTHER STRUCTS
+
+	struct Point3d {
 		x: i32,
-		y:i32,
+		y: i32,
+		z: i32,
 	}
 
-	struct PointRef<'a> {
-		x: &'a mut i32,
-		y: &'a mut i32,
-	}
+	let mut point = Point3d(x:0,y:0,z:0);
+	point = Point3d {y:1, .. point};
 
-	let mut point = Point {x:0,y:0};
-
-	{
-		let r = PointRef{x: &mut point.x, y: &mut point.y};
-
-		*r.y = 6;
-		*r.x = 10;
-	}
-
-	println!("{} {}",point.x, point.y );
 }
