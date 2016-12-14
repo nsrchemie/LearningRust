@@ -23,10 +23,25 @@ fn main() {
 
 
 	//WORKING WITH OUT OF BOUNDS INDEXING ERRORS
-	let v = vec![1,2,3];
-	match v.get(7) {
-		Some(x) => println!("Item 7 is {}",x),
-		None => println!("The index doesnt exist"),
+	// let v = vec![1,2,3];
+	// match v.get(7) {
+	// 	Some(x) => println!("Item 7 is {}",x),
+	// 	None => println!("The index doesnt exist"),
+	// }
+
+	//VECTOR ITERATION
+	let mut v = vec![1,2,3];
+
+	for i in &v {
+		println!("reference to {}",i);
+	}
+
+	for i in &mut v {
+		println!("mutable reference to {}", i);
+	}
+
+	for i in v {
+		println!("Ownership of vector and element {}", i);
 	}
 	}
 
