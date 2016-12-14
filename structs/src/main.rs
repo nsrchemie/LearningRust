@@ -1,4 +1,4 @@
-use std::cell::Cell;
+// use std::cell::Cell;
 
 fn main() {
 	//STRUCTS
@@ -32,5 +32,26 @@ fn main() {
 
 // println!("y has been changed to {:?}", point.y);
 
+//USE OF MUTABLE POINTERS IN STRUCTS
 
+	struct Point {
+		x: i32,
+		y:i32,
+	}
+
+	struct PointRef<'a> {
+		x: &'a mut i32,
+		y: &'a mut i32,
+	}
+
+	let mut point = Point {x:0,y:0};
+
+	{
+		let r = PointRef{x: &mut point.x, y: &mut point.y};
+
+		*r.y = 6;
+		*r.x = 10;
+	}
+
+	println!("{} {}",point.x, point.y );
 }
