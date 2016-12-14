@@ -15,6 +15,9 @@ fn main() {
 
 	//indexing
 	let v = vec![1,2,3];
-	println!("The first element of v is {}",v[0]);
 
+	//Note that indexing is not with i32 but with type usize
+	let i: usize = 0;
+	// let j: i32 = 0; //THIS WONT WORK
+	println!("The first element of v is {}",v[i]);
 }
