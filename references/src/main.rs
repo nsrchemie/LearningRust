@@ -23,16 +23,21 @@ fn main() {
 // 	println!("{}",answer);
 
 
-//muy referencing/borrowing
-let mut x = 5;
-{
-let y = &mut x; 
-*y += 1;
-//the extra curly braces compartmentalize the mutable borrow and we can 
-//work with the immutable borrow x for printing
-//Only one borrow/reference is allowed at a time
-//this function goes:
-//x -> y -> x
-}
-println!("{}", x);
+//mut referencing/borrowing, one at a time
+// let mut x = 5;
+// {
+// let y = &mut x; 
+// *y += 1;
+// //the extra curly braces compartmentalize the mutable borrow and we can 
+// //work with the immutable borrow x for printing
+// //Only one borrow/reference is allowed at a time
+// //this function goes:
+// //x -> y -> x
+// }
+// println!("{}", x);
+
+
+
+
+
 }
