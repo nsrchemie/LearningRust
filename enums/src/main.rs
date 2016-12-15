@@ -21,5 +21,12 @@ fn main() {
 	let y: BoardGameTurn = BoardGameTurn::Move { squares: 1};
 	//Both enums have variants named Move but they are scoped individually and dont clash
 
-	
+	//Can use enum constructor like a function
+	let m  = Message::Write("Hello!".to_string());
+	//Equivalent code is
+	//fn m(x: String) -> Message {
+	// 		Message::Write(x)
+	// }
+	//let x = m("Hello!".to_string());
+
 }
