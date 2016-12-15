@@ -6,9 +6,16 @@ fn main() {
     //they exist for the entire duration they run
 
     //two forms of strings spanning multiple lines
-    let s = "foo
-    bar";
-    //the assert has the newline and 
-    //any leading whitespace (4 spaces)
-    assert_eq!("foo\n    bar", s);
+    // let s = "foo
+    // bar";
+    // //the assert has the newline and 
+    // //any leading whitespace (4 spaces)
+    // assert_eq!("foo\n    bar", s);
+
+
+    //You can trim spaces AND newline
+    let s = "foo\
+              bar";
+
+    assert_eq!("foobar",s);
 }
