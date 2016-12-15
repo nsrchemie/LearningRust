@@ -10,4 +10,16 @@ fn main() {
 	}
 
 	//working with enums
+
+	let x: Message = Message::Move { x: 3, y: 4};
+
+	enum BoardGameTurn {
+		Move {squares: i32},
+		Pass,
+	}
+
+	let y: BoardGameTurn = BoardGameTurn::Move { squares: 1};
+	//Both enums have variants named Move but they are scoped individually and dont clash
+
+	
 }
