@@ -32,9 +32,17 @@ fn main() {
     //To create a String, convert a string  slice using
     //to_string method
 
-    let mut s = "Hello".to_string();
-    println!("{}",s);
+    // let mut s = "Hello".to_string();
+    // println!("{}",s);
 
-    s.push_str(", world");
-    println!("{}",s);
+    // s.push_str(", world");
+    // println!("{}",s);
+
+    //Can convert String intto &str with &
+    fn take_slice(slice:&str) {
+    	println!("{}",slice);
+    }
+
+    let s = "Hello".to_string();
+    take_slice(&s);
 }
