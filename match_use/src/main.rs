@@ -45,10 +45,23 @@ fn main() {
 
 	//MATCHING MULTIPLE PATTERNS
 	//using | for OR conditional 
-	let x = 2;
+	// let x = 2;
 
-	match x {
-		1 | 2 => println!("One or two"),
-		_ => println!("Something else"),
+	// match x {
+	// 	1 | 2 => println!("One or two"),
+	// 	_ => println!("Something else"),
+	// }
+
+
+	//Be careful with shadowing
+	//The below pattern will accept ANY value
+	//it will set x to the same value as c
+	//within the match scope
+	let x = 1;
+	let c = "THIS IS A STRING";
+	match c {
+	x => println!("x: {} c: {}", x, c),
 	}
+	println!("x: {}", x)
+
 }
