@@ -29,4 +29,10 @@ fn main() {
 	// }
 	//let x = m("Hello!".to_string());
 
+	//Useful example of enums, function constructors
+	let v = vec!["Hello".to_string(), "World".to_string()];
+	//Note the use of enums as a type
+	let v1: Vec<Message> = v.into_iter().map(Message::Write).collect();
+
+
 }
