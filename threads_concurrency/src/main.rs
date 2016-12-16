@@ -6,8 +6,9 @@ fn main() {
 	//a new thread
 	//It returns a handle used to wait for the 
 	//child thread to finish
-	thread::spawn(|| {
-		println!("This is inside a thread");
+	let handle = thread::spawn(|| {
+		"This is inside a thread"
 	});
 
+	println!("{}",handle.join().unwrap());
 }
