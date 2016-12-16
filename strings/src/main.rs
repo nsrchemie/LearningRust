@@ -59,7 +59,7 @@ fn main() {
     //can take up numerous bytes
     //can look at string as bytes or codepoints
 
-    let me = "Nicholas";
+    // let me = "Hello ";
     // // for v in me.chars() {
     // // 	println!("{}",v);
     // // }
@@ -72,8 +72,21 @@ fn main() {
     // println!("{:?}", first);
 
     //Can slice a string with &str[int..int]
-    let mo = &me[0..5];
-    println!("{}",mo);
+    // let mo = &me[0..5];
+    // println!("{}",mo);
 
+    //You can concatenate a String and &str
+    // let first = "Hello ".to_string();
+    // let last = "World";
+
+    // let name = first + last;
+    // println!("{}",name);
+
+    //To concatenate two Strings,
+    //use &
+    let first = "Hello ".to_string();
+    let last = "World".to_string();
+    let name = first + &last;
+    println!("{}", name);
 
 }
