@@ -1,7 +1,7 @@
 #[test]
-#[should_panic]
+#[should_panic(expected = "assertion failed")]
 fn it_works() {
-	assert!(false);
+	assert_eq!(2,1);
 }
 
 fn main() {
