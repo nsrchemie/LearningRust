@@ -9,14 +9,18 @@ fn main() {
 	// println!("{}",plus_one(1));
 
 	//Multi-line closure
-	let plus_two = |x| {
-		let mut result: i32 = x;
+	// let plus_two = |x| {
+	// 	let mut result: i32 = x;
 
-		result += 1;
-		result += 1;
+	// 	result += 1;
+	// 	result += 1;
 
-		result
-	};
+	// 	result
+	// };
 
-	println!("{}",plus_two(1));
+	// println!("{}",plus_two(1));
+
+	//You can simplify closures
+	let plus_one = |x: i32| -> i32 {x + 1};
+	println!("{}", plus_one(1));
 }
