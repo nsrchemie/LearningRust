@@ -1,5 +1,8 @@
 #[test]
-fn it_works() {}
+#[should_panic]
+fn it_works() {
+	assert!(false);
+}
 
 fn main() {
 }
