@@ -39,10 +39,31 @@ fn main() {
     // println!("{}",s);
 
     //Can convert String intto &str with &
-    fn take_slice(slice:&str) {
-    	println!("{}",slice);
-    }
+    // fn take_slice(slice:&str) {
+    // 	println!("{}",slice);
+    // }
 
-    let s = "Hello".to_string();
-    take_slice(&s);
+    // let s = "Hello".to_string();
+    // take_slice(&s);
+
+    //if a function takes a &str trait
+    //String types have to be referred with &*str
+
+    //INDEXING
+
+    //strings are UTF-8, thus they CAN NOT be indexed
+    //let s = "Hello"
+    //println!("{}", s[0]); <-- this will not work
+
+    //each character in a utf-8 encoded string
+    //can take up numerous bytes
+    //can look at string as bytes or codepoints
+
+    let me = "Nicholas";
+    for v in me.chars() {
+    	println!("{}",v);
+    }
+    for b in me.as_bytes() {
+    	println!("{}",b);
+    }
 }
