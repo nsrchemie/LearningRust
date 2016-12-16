@@ -60,14 +60,20 @@ fn main() {
     //can look at string as bytes or codepoints
 
     let me = "Nicholas";
-    // for v in me.chars() {
-    // 	println!("{}",v);
-    // }
-    // for b in me.as_bytes() {
-    // 	println!("{}",b);
-    // }
+    // // for v in me.chars() {
+    // // 	println!("{}",v);
+    // // }
+    // // for b in me.as_bytes() {
+    // // 	println!("{}",b);
+    // // }
 
-    //Closest equivalent to indexing is nth method with chars
-    let first = me.chars().nth(0);
-    println!("{:?}", first);
+    // //Closest equivalent to indexing is nth method with chars
+    // let first = me.chars().nth(0);
+    // println!("{:?}", first);
+
+    //Can slice a string with &str[int..int]
+    let mo = &me[0..5];
+    println!("{}",mo);
+
+
 }
