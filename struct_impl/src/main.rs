@@ -14,4 +14,12 @@ fn main() {
 
 	let tobacco_alkaloid_pair: Pair<&str> = Pair { first: "Nicotine", second: "Anabasine"};
 	println!("Everyone talks about the {:?} in Tobacco but the FAR more interesting drug in it is {:?}",tobacco_alkaloid_pair.first, tobacco_alkaloid_pair.second );
+
+	//You can also write functions that work with generic data structures
+	fn second<T>(pair: Pair<T>) {
+		pair.second;
+	}
+	let lntwo = second(lucky_number_pair);
+
 }
+
