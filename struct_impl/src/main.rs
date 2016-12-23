@@ -8,14 +8,18 @@ fn main() {
 
 	//we can define struct methods using impl
 	impl Rectangle {
-		//Creating a static method (Constructor), 
-		//keep in mind the name 'new' can be anything
-		fn new(h: f64, w: f64) -> 
-		Rectangle {
-			height: h,
-			width: w
+		//create structure method
+		//notice we want to avoid moving, and instead reference
+		fn area(&self) -> f64 {
+			self.height * self.width
 		}
 	}
+
+	let a_box = Rectangle {height: 3.2, width: 6.9};
+	println!("Area on my rectangle is {:?}",a_box.area() );
+
+
+
 
 }
 
