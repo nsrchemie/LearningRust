@@ -1,3 +1,13 @@
+use std::collections::HashMap;
 fn main() {
-    println!("Hello, world!");
+
+	type Table = HashMap<String, Vec,<String>>;
+
+
+fn show(table: Table) {
+	for (family, genus) in table {
+		println!("{:?}", );
+	}
+}
+
 }
