@@ -16,10 +16,7 @@ fn main() {
 	}
 
 	let a_box = Rectangle {height: 3.2, width: 6.9};
-	println!("Area on my rectangle is {:?}",a_box.area() );
-
-
-
+	println!("Area on my rectangle is {:?}",a_box.area());
 
 }
 
