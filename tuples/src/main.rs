@@ -5,5 +5,9 @@ fn main() {
 // println!("{:?}",x);
 
 //To print select elements
-println!("{}", x.0);
+// println!("{}", x.0);
+
+let (chr,int) = x;
+
+println!("{}",chr);
 }
