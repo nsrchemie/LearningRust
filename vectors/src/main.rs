@@ -30,18 +30,25 @@ fn main() {
 	// }
 
 	//VECTOR ITERATION
-	let mut v = vec![1,2,3];
+	// let mut v = vec![1,2,3];
 
-	for i in &v {
-		println!("reference to {}",i);
-	}
+	// for i in &v {
+	// 	println!("reference to {}",i);
+	// }
 
-	for i in &mut v {
-		println!("mutable reference to {}", i);
-	}
+	// for i in &mut v {
+	// 	println!("mutable reference to {}", i);
+	// }
 
-	for i in v {
-		println!("Ownership of vector and element {}", i);
-	}
+	// for i in v {
+	// 	println!("Ownership of vector and element {}", i);
+	// }
+
+	//Vector push/pop
+	let mut x: Vec<i64> = Vec::new();
+	x.push(5);
+	println!("{}", x[0]);
+	x.pop();
+	println!("{:?}",x);
 	}
 
